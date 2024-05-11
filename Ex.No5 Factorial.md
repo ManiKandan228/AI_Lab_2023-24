@@ -13,12 +13,12 @@ To  write  a logic program for finding the factorial of given number using SWI-P
 
 ### Program:
 ```
-likes(steve,X):-
-     easycourse(X).
-hard(sciencecourse).
-easycourse(X):-
-          course(X,dept(havefun)).
-course(bk301,dept(havefun)).
+factorial(0,1).
+factorial(A,B) :-
+ A > 0,
+ C is A-1,
+ factorial(C,D),
+ B is A*D.
 ```
 ### Output:
 ![image](https://github.com/ManiKandan228/AI_Lab_2023-24/assets/119160414/76000d21-5e62-4562-8b24-d0658ff7ad81)
